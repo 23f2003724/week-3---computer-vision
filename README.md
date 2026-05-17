@@ -1,67 +1,50 @@
-# 🖼 Computer Vision Basics – OpenCV
+# Computer Vision Basics with OpenCV
 
-## 📌 Overview
-This project demonstrates fundamental Computer Vision techniques using OpenCV.
+A beginner-friendly OpenCV project covering core image-processing concepts in Python. The project includes scripts for edge detection and face detection while practicing image representation, transformations, and filtering.
 
-Topics covered:
-- Image representation in Machine Learning
-- Image transformations
-- Blurring & filtering
-- Edge detection (Canny)
-- Face detection (Haar Cascade)
+## Topics Covered
 
----
+- Image representation as NumPy arrays
+- Image resizing and transformations
+- Blurring and filtering
+- Canny edge detection
+- Haar Cascade face detection
 
-## 📷 What is an Image in ML?
+## Tech Stack
 
-An image is a NumPy array of shape:
+- Python
+- OpenCV
+- NumPy
+- Matplotlib
 
-(height, width, channels)
+## Local Setup
 
-Example:
-(414, 736, 3)
-
-Each pixel stores intensity values between 0–255.
-
----
-
-## 🔍 Edge Detection
-
-Canny edge detection identifies boundaries in an image by detecting strong intensity gradients.
-
-Pipeline:
-1. Convert to grayscale
-2. Apply Gaussian blur
-3. Apply Canny edge detector
-
----
-
-## 👤 Face Detection
-
-Uses Haar Cascade (pre-trained classical model).
-
-The model detects faces by identifying intensity patterns similar to facial structures.
-
----
-
-## ▶ How to Run
-
-1. Install dependencies:
-
+```bash
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-2. Run edge detection:
+## How to Run
 
+Run edge detection:
+
+```bash
 python edge_detection.py
+```
 
-3. Run face detection:
+Run face detection:
 
+```bash
 python face_detection.py
+```
 
----
+## What This Project Shows
 
-## 📦 Requirements
+This project demonstrates basic computer-vision workflow skills: loading images, converting image formats, applying filters, detecting edges, using a pre-trained Haar Cascade model, and visualizing image outputs.
 
-- opencv-python
-- matplotlib
-- numpy
+## Next Improvements
+
+- Add sample input/output screenshots
+- Add command-line arguments for image paths
+- Add a notebook version explaining each transformation step
